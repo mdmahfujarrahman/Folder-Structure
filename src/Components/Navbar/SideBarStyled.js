@@ -42,6 +42,9 @@ export const FOLDER = styled.div`
     &.inerChildFolder {
         margin-left: 45px !important;
     }
+    &.inerChildMoreClass {
+        margin-left: 65px !important;
+    }
 
     .arrowIcon {
         margin-right: 0.5rem;

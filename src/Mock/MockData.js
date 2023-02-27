@@ -6,7 +6,11 @@ export const FolderStructure = {
             name: "folder 1",
             type: "folder",
             children: [
-                { id: 5, name: "folder 3", children: [] },
+                {
+                    id: 5,
+                    name: "folder 3",
+                    children: [{ id: 5, name: "folder 5", children: [] }],
+                },
                 { id: 5, name: "folder 3", children: [] },
                 { id: 5, name: "folder 3", children: [] },
             ],

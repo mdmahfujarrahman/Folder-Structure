@@ -1,0 +1,80 @@
+.inerModal {
+    width: 30%;
+    background-color: var(--secondary-color) !important;
+    display: flex;
+    color: var(--white-color);
+    flex-direction: column;
+    border-radius: 10px;
+}
+.modal-head {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.modal-head h2 {
+    margin: 0 0 0 20px;
+    color: var(--primary-color);
+}
+.modal-close-icon {
+    position: relative;
+}
+.modal-close-icon img {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 15px;
+}
+.modal-content label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.modal-content h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.modal-content span {
+    color: var(--primary-color);
+}
+.modal-content input {
+    width: 70%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 0 10px;
+    outline: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 2px solid var(--black-color);
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+.modal-content input:focus {
+    border: 2px solid var(--primary-color);
+}
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.btnColorPrimary {
+    background-color: var(--primary-color);
+}
+
+.modal-yes-btn {
+    margin-right: 10px;
+}

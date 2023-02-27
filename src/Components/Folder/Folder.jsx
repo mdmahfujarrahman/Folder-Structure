@@ -15,7 +15,11 @@ const Folder = ({
     isChildren,
     isInerChildren,
     inerChildClass,
+    isInerMoreChildren,
     folder,
+    inerChildMoreClass,
+    openModal,
+    deleteFolder,
 }) => {
     console.log("folder", handleChildArror);
 
@@ -23,7 +27,7 @@ const Folder = ({
         <FOLDER
             className={`${isChildren && childClass} ${
                 isInerChildren && inerChildClass
-            }`}
+            } ${isInerMoreChildren && inerChildMoreClass}`}
         >
             <div className="flexCenter">
                 {folder?.children?.length > 0 && (
@@ -42,12 +46,14 @@ const Folder = ({
             </div>
             <div>
                 <img
+                    onClick={openModal}
                     className="childFolderImg"
                     src={createFolderIcon}
                     alt="carete Folder"
                 />
                 {!isRoot && (
                     <img
+                        onClick={() => deleteFolder(folder)}
                         className="childFolderImg"
                         src={deleteFolderIcon}
                         alt="trash Folder"
